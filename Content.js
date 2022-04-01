@@ -20,3 +20,8 @@ for(let i=0; i <imgs.length; i++){
     const randomImg = Math.floor(Math.random() * rickRoll.length);
     imgs[i].src = rickRoll[randomImg];
 }
+
+const headers = document.getElementsByTagName("h2");   
+for(let i=0; i <headers.length; i++){
+    headers.innerText = "RickRolled LOL";
+}
