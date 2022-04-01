@@ -1,4 +1,4 @@
-let willSmith = [
+let rickRoll = [
     "https://www.google.com/url?sa=i&url=https%3A%2F%2Ftvovermind.com%2Frick-astleys-never-gonna-give-you-up-gets-a-4k-remaster%2F&psig=AOvVaw0EtPehQUyq4fn7oPLKWPhI&ust=1648874062480000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKDH7eWE8vYCFQAAAAAdAAAAABAa",
     "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.businessinsider.com.au%2Fnever-gonna-give-you-up-rick-astley-remastered-4k-roll-2021-2&psig=AOvVaw0EtPehQUyq4fn7oPLKWPhI&ust=1648874062480000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKDH7eWE8vYCFQAAAAAdAAAAABAg",
     "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcollider.com%2Frick-astley-never-gonna-give-you-up-4k-remaster-rickroll%2F&psig=AOvVaw0EtPehQUyq4fn7oPLKWPhI&ust=1648874062480000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKDH7eWE8vYCFQAAAAAdAAAAABAk",
@@ -14,3 +14,9 @@ let willSmith = [
     "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.stjohnsessex.org%2Frick-astley-never-gonna.htm&psig=AOvVaw1fJVR4vdi-6UeGGopMI8RS&ust=1648874448825000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJj4k5KG8vYCFQAAAAAdAAAAABAN",
     "https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fitswhispers%2Fstatus%2F1264692555725148160&psig=AOvVaw1fJVR4vdi-6UeGGopMI8RS&ust=1648874448825000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJj4k5KG8vYCFQAAAAAdAAAAABAS"
 ];
+
+const imgs = document.getElementsByTagName("img");   
+for(let i=0; i <imgs.length; i++){
+    const randomImg = Math.floor(Math.random() * rickRoll.length);
+    imgs[i].src = rickRoll[randomImg];
+}
